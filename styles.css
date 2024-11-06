@@ -1,49 +1,48 @@
-/*  your css code here. If applicable */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
 .ProgressBar{
     display: flex;
-    justify-content: center;
-    align-items:center;
-    margin-bottom: 20px;
+    justify-content: space-evenly;
+    margin: 10px;
 }
-
 
 .circle{
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
     border: 2px solid grey;
+    border-radius: 50%;
+     width: 30px;
+    height: 30px;
     color: black;
-    background-color: white;
-    /* margin: 0px 10px;     */
-    font-size: 18px;
+    
     display: flex;
-    align-items: center;
     justify-content: center;
-}
+    align-items: center;
 
-.active{
-    border: 2px solid blue;
 }
 
 .line{
     height: 2px;
     flex: 1;  /* important  */
     background-color: gray;
+    margin: 12px 0px;
 }
 
-.line.active{
-    background: blue;
-}
-
-button {
-    background-color: blue;
-    color: white;
+.active{
     border: 2px solid blue;
-    padding: 10px 20px;
-    margin: 0px 5px;
+} 
 
-}
+/* button {
+    background-color: rgb(87, 87, 247);
+    color: white;
+    border: 2px solid  rgb(87, 87, 247);;
+    padding: 10px 20px;
+    margin: 10px 15px;
+
+} */
 
 button:disabled{
     cursor: not-allowed;
-}
+} 

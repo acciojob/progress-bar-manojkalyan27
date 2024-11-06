@@ -1,13 +1,12 @@
-//your JS code here. If required.
-const circles = document.querySelectorAll('circle');
-const lines = document.querySelectorAll('line');
+const circles = document.querySelectorAll('.circle');
+const lines = document.querySelectorAll('.line');
 const prevButton = document.querySelector('#prev');
 const nextButton = document.querySelector('#next');
 
 let currentActive = 1;
 
 prevButton.addEventListener("click" , ()=>{
-    currentActive--
+    currentActive--;
     if(currentActive < 1){
         currentActive = 1;
     }
